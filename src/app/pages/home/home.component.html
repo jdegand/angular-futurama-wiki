@@ -1,0 +1,16 @@
+@if(characters){
+<section class="grid">
+    @for (character of characters; track character.id) {
+    <div class="card">
+        <div>
+            <a [routerLink]="['/character/'+character.id]">
+                <img [src]="character.images.main" width="250" height="300" alt="">
+            </a>
+        </div>
+        <div>
+            <h2>{{ character.name.first + " " + character.name.middle + " " + character.name.last }}</h2>
+        </div>
+    </div>
+    }
+</section>
+}

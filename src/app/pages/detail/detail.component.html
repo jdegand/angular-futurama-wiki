@@ -1,0 +1,64 @@
+<section>
+    <div class="card_detail_container">
+        @if(character && character.images.main){
+        <div class="card_detail_img">
+            <img [src]="character.images.main" alt="" />
+        </div>
+        }
+        @if(character){
+        <div class="card_detail_text">
+            <dl>
+                <dt>Name:</dt>
+                <dd>{{character.name.first + " " + character.name.middle + " " + character.name.last}}</dd>
+                <dt>Age:</dt>
+                @if(character.age){
+                <dd>{{character.age}}</dd>
+                } @else {
+                <dd>unknown</dd>
+                }
+                <dt>Gender:</dt>
+                @if(character.gender) {
+                <dd>{{character.gender}}</dd>
+                } @else {
+                <dd>unknown</dd>
+                }
+                <dt>Species:</dt>
+                @if(character.species) {
+                <dd>{{character.species}}</dd>
+                } @else {
+                <dd>unknown</dd>
+                }
+                <dt>Planet:</dt>
+                @if(character.homePlanet){
+                <dd>{{character.homePlanet}}
+                    } @else {
+                <dd>unknown</dd>
+                }
+                <dt>Profession:</dt>
+                @if(character.occupation) {
+                <dd>{{character.occupation}}</dd>
+                } @else {
+                <dd>unknown</dd>
+                }
+            </dl>
+            <div>
+                <span>Sayings:</span>
+                <ul>
+                    @for (saying of character.sayings.slice(0,5); track saying) {
+                    <li>{{ saying }}</li>
+                    } @empty {
+                    <li>unknown</li>
+                    }
+                </ul>
+            </div>
+        </div>
+        }
+        <!--
+        @else{
+            <div class="character__detail__not__found">
+                <p>Character id {{id}} not found.</p>
+            </div>
+        }
+        -->
+    </div>
+</section>

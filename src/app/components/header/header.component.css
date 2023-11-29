@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    cursor: pointer;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}

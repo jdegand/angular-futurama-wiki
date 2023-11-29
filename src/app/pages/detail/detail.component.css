@@ -1,0 +1,33 @@
+.card_detail_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.card_detail_img {
+    width: 100%;
+}
+
+.card_detail_text {
+    justify-content: center;
+    text-align: left;
+    max-width: 75%;
+}
+
+.character__detail__not__found {
+    text-align: center;
+    /* doesn't go to center of page because div is still part of .card_detail_container grid */
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+@media(max-width: 768px) {
+    .card_detail_container {
+        grid-template-columns: 1fr;
+    }
+
+    .card_detail_text {
+        margin: 2rem auto;
+        max-width: 90%;
+    }
+
+}
