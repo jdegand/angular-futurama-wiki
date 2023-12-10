@@ -20,7 +20,7 @@ This is an Angular conversion of my [React Futurama Fan Wiki](https://github.com
 ## Continued Development
 
 - Fetch error handling 
-- You could bind `head-shot` for alt tag.  I think all head-shots are empty strings.
+- You could use `head-shot` for the alt tag.  I think all head-shots are empty strings.
 
 ## Useful Resources
 
