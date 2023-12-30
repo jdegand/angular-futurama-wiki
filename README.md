@@ -2,6 +2,16 @@
 
 This is an Angular conversion of my [React Futurama Fan Wiki](https://github.com/jdegand/futurama-fan-wiki).
 
+## Screenshots
+
+![](screenshots/angular-futurama-fan-wiki-1.png "Home Page")
+
+***
+
+![](screenshots/angular-futurama-fan-wiki-2.png "Detail Page")
+
+***
+
 ## Built With
 
 - [Angular](https://angular.dev)
