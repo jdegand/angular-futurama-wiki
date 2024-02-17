@@ -1,6 +1,6 @@
 # Angular Futurama Wiki
 
-This is an Angular conversion of my [React Futurama Fan Wiki](https://github.com/jdegand/futurama-fan-wiki).
+[This](https://jdegand.github.io/angular-futurama-wiki/) is an Angular conversion of my [React Futurama Fan Wiki](https://github.com/jdegand/futurama-fan-wiki).
 
 ## Screenshots
 
